@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Rubik+Dirt&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+}
+
+main section {
+    text-align: center;
+}
+main section div{
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    margin-left: -22px;
+    border-bottom: 2px solid rgba(56, 122, 100, 0.315);
+    border-top: 2px solid rgba(56, 122, 100, 0.315);
+    border-right: 2px solid rgba(56, 122, 100, 0.315);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 20px;
+    z-index: 100;
+}
+main .game{
+    border: 2px solid rgba(56, 122, 100, 0.315);
+    border-radius: 20px;
+    padding: 40px;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    z-index: 1;
+}
+#title{
+    color: rgb(56, 122, 100);
+    font-size: 60px;
+    font-family: 'Rubik Dirt', cursive;
+    padding-bottom: 20px;
+    margin-left: -240px;
+    font-weight: 100;
+}
+.data-game{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.data-game h1{
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    margin: 10px 0;
+    padding: 20px 50px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.555);
+    color: rgb(76, 78, 77);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+td{
+    padding: 5px;
+    border: none;
+}
+td button{
+    border: 1px solid rgba(165, 157, 157, 0.521);
+    border-radius: 10px;
+    padding: 5px;
+    height: 80px;
+    width: 80px;
+    /*
+    background-image: url('/assets/images/ver.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    */
+}
+td img{
+    height: 50px;
+    width: 50px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+footer p{
+    color: rgb(56, 122, 100);
+    margin-left: -240px;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+@media screen and (max-width: 850px) {
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    main .game{
+        border: 1px solid rgba(56, 122, 100, 0.315);
+        border-radius: 20px;
+        padding: 20px;
+        background-color: #8BC6EC;
+        background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+        z-index: 1;
+        max-width: 350px;
+    }
+    #title{
+        text-align: center;
+        color: rgb(56, 122, 100);
+        font-size: 50px;
+        padding-bottom: 20px;
+        margin-left: -24px;
+        font-weight: 100;
+    }
+    td button{
+        border: 1px solid rgba(165, 157, 157, 0.521);
+        border-radius: 10px;
+        padding: 2px;
+        max-height: 50px;
+        max-width: 50px;
+        /*
+        background-image: url('/assets/images/ver.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        */
+    }
+    td img{
+        height: 30px;
+        width: 30px;
+    }
+    .data-game{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    main section div{
+        background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+        border: 2px solid rgba(56, 122, 100, 0.315);
+        border-radius: 20px;
+        padding: 20px;
+    }
+    footer p{
+        color: rgb(56, 122, 100);
+        margin-left: -24px;
+        padding: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
