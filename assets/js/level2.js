@@ -8,7 +8,7 @@ let secondResult = null;
 let retry = 0;
 let assert = 0;
 let timer = false;
-let temporizador = 40;
+let temporizador = 59;
 let tiempoRegresivo = null;
 
 //Levels of game DOM
@@ -32,7 +32,7 @@ const btnNextLvel = document.getElementById('next-level-btn');
 
 
 
-let imgSources = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8];
+let imgSources = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8,9,9,10,10];
 
 
 imgSources = imgSources.sort(() => {
@@ -51,9 +51,9 @@ function contarTiempo(){
 }
 
 function bloquearTarjetas(){
-    for (let i = 0; i <= 15; i++) {
+    for (let i = 0; i <= 19; i++) {
         let tarjetaBloqueada = document.getElementById(i);
-        tarjetaBloqueada.innerHTML = `<img src="assets/images/${imgSources[i]}.png" />`;
+        tarjetaBloqueada.innerHTML = `<img src="../assets/img-level2/${imgSources[i]}.png" />`;
         tarjetaBloqueada.disabled = true;
     }
     btnRetry.style.display = 'block';
@@ -71,12 +71,12 @@ function destapar(id) {
 
     if (unlockCard == 1) {
         cardOne = document.getElementById(id);
-        firstResult = `<img src="assets/images/${imgSources[id]}.png" />`;
+        firstResult = `<img src="../assets/img-level2/${imgSources[id]}.png" />`;
         cardOne.innerHTML = firstResult;
         cardOne.disabled = true;
     } else if (unlockCard == 2) {
         cardTwo = document.getElementById(id);
-        secondResult = `<img src="assets/images/${imgSources[id]}.png" />`;
+        secondResult = `<img src="../assets/img-level2/${imgSources[id]}.png" />`;
         cardTwo.innerHTML = secondResult;
         cardTwo.disabled = true;
 
@@ -87,17 +87,17 @@ function destapar(id) {
             unlockCard = 0;
             assert++;
             score.innerText = assert;
-            if(assert == 8){
+            if(assert == 10){
                 clearInterval(tiempoRegresivo);
                 score.innerHTML = `Felicidades ya tienes ${assert} aciertos 😊👌`;
                 $retry.innerHTML = `Tus intentos fueron ${retry} 🤞😁`
                 btnNextLvel.style.display = 'block';
-                level2.src = '../assets/images/unlocked.png';
-                level2.addEventListener('click', () => {
+                level3.src = '../assets/images/unlocked.png';
+                level3.addEventListener('click', () => {
                     window.open('levels/level2.html', '_self');
                 });
                 btnNextLvel.addEventListener('click', () => {
-                    window.open('levels/level2.html', '_self');
+                    window.open('levels/level3.html', '_self');
                 });
             }
         } else {
@@ -116,8 +116,6 @@ btnRetry.addEventListener('click', () => {
     location.reload();
 });
 
-btnNextLvel.addEventListener('click', () => {
-    window.open('levels/level2.html', '_self');
+level1.addEventListener('click', () => {
+    window.open('index.html', '_self');
 });
-
-
