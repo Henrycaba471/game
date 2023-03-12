@@ -162,7 +162,7 @@ footer p{
     #title{
         text-align: center;
         color: rgb(56, 122, 100);
-        font-size: 50px;
+        font-size: 35px;
         padding-bottom: 20px;
         margin-left: -24px;
         font-weight: 100;
@@ -179,6 +179,10 @@ footer p{
         background-size: cover;
         */
     }
+    main section table td img{
+    height: 40px;
+    width: 40px;
+}
     td img{
         height: 30px;
         width: 30px;
