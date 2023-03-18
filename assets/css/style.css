@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Rubik+Dirt&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 *::after,
-*::before{
+*::before {
     box-sizing: inherit;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,10 +20,10 @@ body{
     background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
 }
 
-main{
+main {
     display: flex;
     flex-wrap: wrap;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     text-align: center;
 }
@@ -30,7 +32,7 @@ main section {
     text-align: center;
 }
 
-main section div{
+main section div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,7 +46,8 @@ main section div{
     padding: 20px;
     z-index: 100;
 }
-main .game{
+
+main .game {
     border: 2px solid rgba(56, 122, 100, 0.315);
     border-radius: 20px;
     padding: 20px;
@@ -52,27 +55,31 @@ main .game{
     background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
     z-index: 1;
 }
-#level{
-  font-size: 30px;
-  color: rgb(56, 122, 100);
-  font-family: 'Rubik Dirt', cursive;
-}
-#title{
+
+#level {
+    font-size: 30px;
     color: rgb(56, 122, 100);
-    font-size: 40px;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+#title {
+    color: rgb(56, 122, 100);
+    font-size: 45px;
     font-family: 'Rubik Dirt', cursive;
     padding-bottom: 20px;
     margin-left: -240px;
     font-weight: 100;
 }
-.data-game{
+
+.data-game {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
-.data-game h1{
+
+.data-game h1 {
     background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
     margin: 10px 0;
     padding: 10px 10px;
@@ -83,11 +90,13 @@ main .game{
     width: 400px;
     font-size: 17px;
 }
-td{
+
+td {
     padding: 5px;
     border: none;
 }
-td button{
+
+td button {
     border: 1px solid rgba(165, 157, 157, 0.521);
     border-radius: 10px;
     padding: 5px;
@@ -99,15 +108,17 @@ td button{
     background-size: cover;
     */
 }
-main section table td img{
+
+main section table td img {
     height: 50px;
     width: 50px;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
 }
-.data-game div button{
+
+.data-game div button {
     box-sizing: border-box;
     background-image: linear-gradient(135deg, #8bc5ecc7 0%, #9599E2 100%);
     margin: 10px 0;
@@ -120,12 +131,14 @@ button:hover{
     transition: all 0.5s;
     display: none;
 }
-.data-game div button:hover{
+
+.data-game div button:hover {
     transform: scale(.95);
     background: #a8a2a269;
     box-sizing: border-box;
 }
-.levels div{
+
+.levels div {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -133,45 +146,52 @@ button:hover{
     justify-content: space-around;
     padding: 10px;
 }
-.levels div img{
+
+.levels div img {
     height: 50px;
     border-radius: 50%;
     padding: 5px;
     margin: 0 10px;
 }
-.levels div img:hover{
+
+.levels div img:hover {
     cursor: pointer;
 }
-footer p{
+
+footer p {
     color: rgb(56, 122, 100);
     margin-left: -240px;
     padding: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.completado{
-  animation: complete 1s ease-out infinite;
-  font-size: 35px;
-  font-weight: bold;
+.completado {
+    animation: complete 1s ease-out infinite;
+    font-size: 35px;
+    font-weight: bold;
 }
-@keyframes complete{
-  30%{
-    color: lightskyblue;
-  }
-  60%{
-    color: yellowgreen;
-  }
-  90%{
-    color: greenyellow;
-  }
+
+@keyframes complete {
+    30% {
+        color: lightskyblue;
+    }
+
+    60% {
+        color: yellowgreen;
+    }
+
+    90% {
+        color: greenyellow;
+    }
 }
 
 @media screen and (max-width: 950px) {
-    main{
+    main {
         display: flex;
         flex-direction: column;
     }
-    main .game{
+
+    main .game {
         border: 1px solid rgba(56, 122, 100, 0.315);
         border-radius: 20px;
         padding: 20px;
@@ -180,7 +200,8 @@ footer p{
         z-index: 1;
         max-width: 350px;
     }
-    #title{
+
+    #title {
         text-align: center;
         color: rgb(56, 122, 100);
         font-size: 30px;
@@ -188,7 +209,8 @@ footer p{
         margin-left: -24px;
         font-weight: 100;
     }
-    td button{
+
+    td button {
         border: 1px solid rgba(165, 157, 157, 0.521);
         border-radius: 10px;
         padding: 2px;
@@ -200,32 +222,38 @@ footer p{
         background-size: cover;
         */
     }
-    main section table td img{
-      height: 40px;
-      width: 40px;
+
+    main section table td img {
+        height: 40px;
+        width: 40px;
     }
-    td img{
+
+    td img {
         height: 30px;
         width: 30px;
     }
-    .data-game{
+
+    .data-game {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 10px;
     }
-    .data-game h1{
+
+    .data-game h1 {
         font-size: 15px;
         width: 300px;
     }
-    main section div{
+
+    main section div {
         background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
         border: 2px solid rgba(56, 122, 100, 0.315);
         border-radius: 20px;
         padding: 20px;
     }
-    footer p{
+
+    footer p {
         color: rgb(56, 122, 100);
         margin-left: -24px;
         padding: 10px;

@@ -92,7 +92,7 @@ function destapar(id) {
                 score.innerHTML = `Felicidades ya tienes ${assert} aciertos 😊👌`;
                 $retry.innerHTML = `Tus intentos fueron ${retry} 🤞😁`
                 btnNextLvel.style.display = 'block';
-                level2.src = '../assets/images/unlocked.png';
+                level2.src = 'assets/images/unlocked.png';
                 level2.addEventListener('click', () => {
                     window.open('levels/level2.html', '_self');
                 });
