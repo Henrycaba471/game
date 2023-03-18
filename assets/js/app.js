@@ -39,7 +39,7 @@ imgSources = imgSources.sort(() => {
     return Math.random() - 0.5;
 });
 
-function contarTiempo(){
+function contarTiempo() {
     tiempoRegresivo = setInterval(() => {
         temporizador--;
         time.innerHTML = temporizador;
@@ -47,13 +47,13 @@ function contarTiempo(){
             clearInterval(tiempoRegresivo);
             bloquearTarjetas();
         }
-    },1000);
+    }, 1000);
 }
 
-function bloquearTarjetas(){
+function bloquearTarjetas() {
     for (let i = 0; i <= 15; i++) {
         let tarjetaBloqueada = document.getElementById(i);
-        tarjetaBloqueada.innerHTML = `<img src="assets/images/${imgSources[i]}.png" />`;
+        tarjetaBloqueada.innerHTML = `<img src="../assets/images/${imgSources[i]}.png" />`;
         tarjetaBloqueada.disabled = true;
     }
     btnRetry.style.display = 'block';
@@ -61,7 +61,7 @@ function bloquearTarjetas(){
 
 function destapar(id) {
 
-    if(timer == false){
+    if (timer == false) {
         contarTiempo();
         timer = true;
     }
@@ -71,12 +71,12 @@ function destapar(id) {
 
     if (unlockCard == 1) {
         cardOne = document.getElementById(id);
-        firstResult = `<img src="assets/images/${imgSources[id]}.png" />`;
+        firstResult = `<img src="../assets/images/${imgSources[id]}.png" />`;
         cardOne.innerHTML = firstResult;
         cardOne.disabled = true;
     } else if (unlockCard == 2) {
         cardTwo = document.getElementById(id);
-        secondResult = `<img src="assets/images/${imgSources[id]}.png" />`;
+        secondResult = `<img src="../assets/images/${imgSources[id]}.png" />`;
         cardTwo.innerHTML = secondResult;
         cardTwo.disabled = true;
 
@@ -87,17 +87,17 @@ function destapar(id) {
             unlockCard = 0;
             assert++;
             score.innerText = assert;
-            if(assert == 8){
+            if (assert == 8) {
                 clearInterval(tiempoRegresivo);
                 score.innerHTML = `Felicidades ya tienes ${assert} aciertos 😊👌`;
                 $retry.innerHTML = `Tus intentos fueron ${retry} 🤞😁`
                 btnNextLvel.style.display = 'block';
-                level2.src = 'assets/images/unlocked.png';
+                level2.src = '../assets/images/unlocked.png';
                 level2.addEventListener('click', () => {
-                    window.open('levels/level2.html', '_self');
+                    window.open('level2.html', '_self');
                 });
                 btnNextLvel.addEventListener('click', () => {
-                    window.open('levels/level2.html', '_self');
+                    window.open('level2.html', '_self');
                 });
             }
         } else {
@@ -120,18 +120,18 @@ btnNextLvel.addEventListener('click', () => {
     window.open('levels/level2.html', '_self');
 });
 level1.addEventListener('click', () => {
-    window.open('../index.html', '_self');
+    window.open('level1.html', '_self');
 });
 level2.addEventListener('click', () => {
-  alert("Nivel Bloqueado, completa el nivel 1 para desbloquear");
+    alert("Nivel Bloqueado, completa el nivel 1 para desbloquear");
 });
 level3.addEventListener('click', () => {
-  alert("Nivel Bloqueado, completa el nivel 2 para desbloquear");
+    alert("Nivel Bloqueado, completa el nivel 2 para desbloquear");
 });
 level4.addEventListener('click', () => {
-  alert("Nivel Bloqueado, completa el nivel 3 para desbloquear");
+    alert("Nivel Bloqueado, completa el nivel 3 para desbloquear");
 });
 level5.addEventListener('click', () => {
-  alert("Nivel Bloqueado, completa el nivel 4 para desbloquear");
+    alert("Nivel Bloqueado, completa el nivel 4 para desbloquear");
 });
 

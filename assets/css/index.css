@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Rubik+Dirt&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.game-start{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 70px;
+    border-radius: 20px;
+}
+
+#title {
+    color: rgb(56, 122, 100);
+    font-size: 45px;
+    font-family: 'Rubik Dirt', cursive;
+    padding-bottom: 20px;
+    font-weight: 100;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+section button {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    background-image: linear-gradient(135deg, #8bc5ec79 0%, #9599E2 100%);
+    margin: 10px 0;
+    padding: 10px 30px 10px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.815);
+    color: rgb(76, 78, 77);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    transition: all 0.5s ease-in-out;
+}
+button img{
+    width:40px;
+    margin-right: 10px;
+}
+button:hover{
+    border: 1px solid rgba(56, 122, 100, 0.432);
+    color: rgb(56, 122, 100);
+    background-image: linear-gradient(135deg,  #8bc5ec79 35%, #9599E2 65%);
+}
+.instructions{
+    max-width: 350px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-top: 10px;
+    color: rgb(56, 122, 100);
+    font-size: 20px;
+    border-radius: 20px;
+    font-family: Arial, sans-serif;
+    display: none;
+}
+.instructions img{
+    width: 50px;
+}
+.instructions h3{
+    font-size: 30px;
+}
+.instructions input{
+    box-sizing: border-box;
+    background-image: linear-gradient(135deg, #8bc5ec79 0%, #9599E2 100%);
+    padding:7px 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.815);
+    color: rgb(76, 78, 77);
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    transition: all 0.5s ease-in-out;
+}
+.instructions input:hover{
+    border: 1px solid rgba(56, 122, 100, 0.432);
+    color: rgb(56, 122, 100);
+    background-image: linear-gradient(135deg,  #8bc5ec79 35%, #9599E2 65%);
+}
+.help{
+    max-width: 350px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-top: 10px;
+    color: rgb(56, 122, 100);
+    font-size: 20px;
+    border-radius: 20px;
+    font-family: Arial, sans-serif;
+    display: none;
+}
+.help table{
+    margin-top: 10px;
+}
+.help .example{
+    display: flex;
+    justify-content: center;
+}
+.help h3{
+    font-size: 30px;
+}
+.help input{
+    box-sizing: border-box;
+    background-image: linear-gradient(135deg, #8bc5ec79 0%, #9599E2 100%);
+    padding:7px 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.815);
+    color: rgb(76, 78, 77);
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    transition: all 0.5s ease-in-out;
+}
+.help input:hover{
+    border: 1px solid rgba(56, 122, 100, 0.432);
+    color: rgb(56, 122, 100);
+    background-image: linear-gradient(135deg,  #8bc5ec79 35%, #9599E2 65%);
+}
+.help .example table td button{
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+}
+
+footer p {
+    color: rgb(56, 122, 100);
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

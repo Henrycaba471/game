@@ -3,66 +3,48 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/index.css">
     <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
     <title>Juego de memoria</title>
 </head>
 
 <body>
     <h1 id="title">Juego de memoria</h1>
-    <h1 id="level">Nivel 1</h1>
     <main>
-        <section class="game">
-            <table>
-                <tr>
-                    <td><button id="0" onclick="destapar(0)"></button></td>
-                    <td><button id="1" onclick="destapar(1)"></button></td>
-                    <td><button id="2" onclick="destapar(2)"></button></td>
-                    <td><button id="3" onclick="destapar(3)"></button></td>
-                </tr>
-                <tr>
-                    <td><button id="4" onclick="destapar(4)"></button></td>
-                    <td><button id="5" onclick="destapar(5)"></button></td>
-                    <td><button id="6" onclick="destapar(6)"></button></td>
-                    <td><button id="7" onclick="destapar(7)"></button></td>
-                </tr>
-                <tr>
-                    <td><button id="8" onclick="destapar(8)"></button></td>
-                    <td><button id="9" onclick="destapar(9)"></button></td>
-                    <td><button id="10" onclick="destapar(10)"></button></td>
-                    <td><button id="11" onclick="destapar(11)"></button></td>
-                </tr>
-                <tr>
-                    <td><button id="12" onclick="destapar(12)"></button></td>
-                    <td><button id="13" onclick="destapar(13)"></button></td>
-                    <td><button id="14" onclick="destapar(14)"></button></td>
-                    <td><button id="15" onclick="destapar(15)"></button></td>
-                </tr>
-            </table>
+        <section class="game-start">
+            <button id="start"><img src="assets/images/play.png" alt="icon play"> Iniciar Partida</button>
+            <button id="instructions"><img src="assets/images/instrucciones.png" alt="icon play">Instrucciones</button>
+            <button id="help"><img src="assets/images/ayuda.png" alt="icon play">Ayuda</button>
+            <button id="exit"><img src="assets/images/cerrar.png" alt="icon play">Salir</button>
         </section>
-        <section class="data-game">
-            <div>
-                <h1>Puntaje: <span id="score">0</span></h1>
-                <h1>Tiempo: <span id="time">40</span> segundos</h1>
-                <h1>Intentos: <span id="try">0</span></h1>
-                <button class="retry-btn" id="retry-btn">Intentar de Nuevo</button>
-                <button class="next-level-btn" id="next-level-btn">Siguiente Nivel</button>
-            </div>
-        </section>
-    </main>
-    <div class="levels">
-        <div class="imgs">
-            <img src="assets/images/unlocked.png" alt="Level-icon" id="level-1" title="Nivel 1">
-            <img src="assets/images/lock.png" alt="Level-icon" id="level-2" title="Nivel 2">
-            <img src="assets/images/lock.png" alt="Level-icon" id="level-3" title="Nivel 3">
-            <img src="assets/images/lock.png" alt="Level-icon" id="level-4" title="Nivel 4">
-            <img src="assets/images/lock.png" alt="Level-icon" id="level-5" title="Nivel 5">
+        <div class="instructions">
+            <img src="assets/images/instrucciones.png" alt="icon play">
+            <h3>Instrucciones</h3>
+            <p>El juego consiste en ir volteando las cartas y tratando de recordar la posición en la que están. <br> <strong>El objetivo es ir haciendo parejas.</strong> <br> Este cuenta con una cuenta regresiva que indica el tiempo que tienes disponible para completar el máximo de parejas posibles. Una vez que se acaba el tiempo, las cartas se voltean automáticamente para mostrarte dónde estaban las parejas respectivas.</p>
+            <input type="submit" value="Cerrar" id="exit-instructions"></input>
         </div>
-    </div>
+        <div class="help">
+            <h3>Ayuda</h3>
+            <p>Debes hacer parejas como se muestra a continuación.</p>
+            <div class="example">
+                <table>
+                    <tr>
+                        <td><button id="1"></button></td>
+                        <td><button id="2"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="3"></button></td>
+                        <td><button id="4"></button></td>
+                    </tr>
+                </table>
+            </div>
+            <input type="submit" value="Cerrar" id="exit-help"></input>
+        </div>
+    </main>
     <footer>
         <p>Desarrollado por Henry Cañizares 😊❤️💻</p>
     </footer>
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>
