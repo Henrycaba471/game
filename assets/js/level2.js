@@ -94,10 +94,10 @@ function destapar(id) {
                 btnNextLvel.style.display = 'block';
                 level3.src = '../assets/images/unlocked.png';
                 level3.addEventListener('click', () => {
-                    window.open('levels/level2.html', '_self');
+                    window.open('level3.html', '_self');
                 });
                 btnNextLvel.addEventListener('click', () => {
-                    window.open('levels/level3.html', '_self');
+                    window.open('level3.html', '_self');
                 });
             }
         } else {
@@ -117,5 +117,17 @@ btnRetry.addEventListener('click', () => {
 });
 
 level1.addEventListener('click', () => {
-    window.open('index.html', '_self');
+    window.open('../index.html', '_self');
+});
+level2.addEventListener('click', () => {
+  window.open('level2.html', '_self')
+});
+level3.addEventListener('click', () => {
+  alert("Nivel Bloqueado, completa el nivel 2 para desbloquear");
+});
+level4.addEventListener('click', () => {
+  alert("Nivel Bloqueado, completa el nivel 3 para desbloquear");
+});
+level5.addEventListener('click', () => {
+  alert("Nivel Bloqueado, completa el nivel 4 para desbloquear");
 });

@@ -119,5 +119,19 @@ btnRetry.addEventListener('click', () => {
 btnNextLvel.addEventListener('click', () => {
     window.open('levels/level2.html', '_self');
 });
-
+level1.addEventListener('click', () => {
+    window.open('../index.html', '_self');
+});
+level2.addEventListener('click', () => {
+  alert("Nivel Bloqueado, completa el nivel 1 para desbloquear");
+});
+level3.addEventListener('click', () => {
+  alert("Nivel Bloqueado, completa el nivel 2 para desbloquear");
+});
+level4.addEventListener('click', () => {
+  alert("Nivel Bloqueado, completa el nivel 3 para desbloquear");
+});
+level5.addEventListener('click', () => {
+  alert("Nivel Bloqueado, completa el nivel 4 para desbloquear");
+});
 

@@ -52,9 +52,14 @@ main .game{
     background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
     z-index: 1;
 }
+#level{
+  font-size: 30px;
+  color: rgb(56, 122, 100);
+  font-family: 'Rubik Dirt', cursive;
+}
 #title{
     color: rgb(56, 122, 100);
-    font-size: 60px;
+    font-size: 40px;
     font-family: 'Rubik Dirt', cursive;
     padding-bottom: 20px;
     margin-left: -240px;
@@ -144,6 +149,22 @@ footer p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.completado{
+  animation: complete 1s ease-out infinite;
+  font-size: 35px;
+  font-weight: bold;
+}
+@keyframes complete{
+  30%{
+    color: lightskyblue;
+  }
+  60%{
+    color: yellowgreen;
+  }
+  90%{
+    color: greenyellow;
+  }
+}
 
 @media screen and (max-width: 950px) {
     main{
@@ -162,7 +183,7 @@ footer p{
     #title{
         text-align: center;
         color: rgb(56, 122, 100);
-        font-size: 35px;
+        font-size: 30px;
         padding-bottom: 20px;
         margin-left: -24px;
         font-weight: 100;
@@ -180,9 +201,9 @@ footer p{
         */
     }
     main section table td img{
-    height: 40px;
-    width: 40px;
-}
+      height: 40px;
+      width: 40px;
+    }
     td img{
         height: 30px;
         width: 30px;
