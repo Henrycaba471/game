@@ -63,7 +63,7 @@ section button {
     transition: all 0.5s ease-in-out;
 }
 button img{
-    width:40px;
+    width: 40px;
     margin-right: 10px;
 }
 button:hover{
@@ -150,8 +150,14 @@ button:hover{
     height: 60px;
     border-radius: 5px;
     border: none;
+    padding: 3px;
+    margin: 3px;
 }
-
+.help .example table td button img{
+    width: 50px;
+    height: 50px;
+    margin: 0;
+}
 footer p {
     color: rgb(56, 122, 100);
     padding: 10px;
